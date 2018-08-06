@@ -19,10 +19,11 @@ public class FizzBuzzSolution {
         boolean deluxeCondition = number > 10 && containsSameDigits;
         if( number3Condition) {
             answer = "fizz";
-        } else if(number5Condition) {
+        } if(number5Condition) {
+
             answer = answer.concat(number3Condition ? " buzz" : "buzz");
 
-        } else if(deluxeCondition) {
+        } if(deluxeCondition) {
             answer = answer.concat(number5Condition ? " deluxe" : "deluxe");
         } else {
             answer = stringNumber;
