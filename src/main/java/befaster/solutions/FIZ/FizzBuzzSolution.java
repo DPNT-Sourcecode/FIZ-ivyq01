@@ -24,7 +24,7 @@ public class FizzBuzzSolution {
             answer = answer.concat(number3Condition ? " buzz" : "buzz");
 
         } if(deluxeCondition) {
-            answer = answer.concat(number5Condition ? " deluxe" : "deluxe");
+            answer = answer.concat(number3Condition || number5Condition ? " deluxe" : "deluxe");
         }
         if(answer.equals("")) {
             answer = stringNumber;
