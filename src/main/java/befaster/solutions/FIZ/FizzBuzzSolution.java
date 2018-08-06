@@ -20,10 +20,10 @@ public class FizzBuzzSolution {
         if( number3Condition) {
             answer = "fizz";
         } else if(number5Condition) {
-            answer += number3Condition ? " buzz" : "buzz";
+            answer.concat(number3Condition ? " buzz" : "buzz");
 
         } else if(deluxeCondition) {
-            answer += number5Condition ? " deluxe" : "deluxe";
+            answer.concat(number5Condition ? " deluxe" : "deluxe");
         } else {
             answer = String.valueOf(number);
         }
