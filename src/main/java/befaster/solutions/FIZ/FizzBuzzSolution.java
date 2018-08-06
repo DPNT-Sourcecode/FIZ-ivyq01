@@ -20,12 +20,12 @@ public class FizzBuzzSolution {
         if( number3Condition) {
             answer = "fizz";
         } else if(number5Condition) {
-            answer.concat(number3Condition ? " buzz" : "buzz");
+            answer = answer.concat(number3Condition ? " buzz" : "buzz");
 
         } else if(deluxeCondition) {
-            answer.concat(number5Condition ? " deluxe" : "deluxe");
+            answer = answer.concat(number5Condition ? " deluxe" : "deluxe");
         } else {
-            answer = String.valueOf(number);
+            answer = stringNumber;
         }
         return answer;
     }
